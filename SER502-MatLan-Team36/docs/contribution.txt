@@ -1,0 +1,9 @@
+Contribution for Milestone 2 - 
+
+Amish Kakka - Update Readme.md, build and troubleshoot test scripts and errors.
+
+Soham Ghosh - Lexer design and initial implementation
+
+Yassir - Parser design and initial implementation
+
+Likitha Potineni - Grammar definition (PDF) and test cases

@@ -1,0 +1,26 @@
+// Test file for Arithmetic operators: +, -, *, / (and .*)
+print "--- Arithmetic Tests ---";
+
+// Scalar Operations
+print "--- Scalar Ops ---";
+a = 15;
+b = 4;
+c = 3;
+
+print "a:", a; // Expected: 15
+print "b:", b; // Expected: 4
+print "c:", c; // Expected: 3
+
+print "a + b:", a + b;     // Expected: 19
+print "a - b:", a - b;     // Expected: 11
+print "a * b:", a * b;     // Expected: 60
+print "a / b:", a / b;     // Expected: 3.75
+print "-a:", -a;       // Expected: -15
+
+// Operator Precedence
+print "a + b * c:", a + b * c; // Expected: 15.0 + (4.0 * 3.0) = 27.0
+print "(a + b) * c:", (a + b) * c; // Expected: (15.0 + 4.0) * 3.0 = 57.0
+print "a / b * c:", a / b * c; // Expected: (15.0 / 4.0) * 3.0 = 11.25
+
+// Division by zero (should produce an error message from runtime)
+print "a / 0:", a / 0.0; 

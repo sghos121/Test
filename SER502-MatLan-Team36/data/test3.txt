@@ -1,0 +1,33 @@
+// Test file for for loop statements in MatLan
+
+// Basic for loop incrementing
+sum_inc = 0;
+print "Starting basic for loop (incrementing 0 to 4):";
+for (i = 0; i < 5; i = i + 1) {
+    print "Current i:", i;
+    sum_inc = sum_inc + i;
+}
+print "Sum after incrementing loop:", sum_inc; // Expected: 10 (0+1+2+3+4)
+
+// For loop decrementing
+sum_dec = 0;
+print "Starting basic for loop (decrementing 5 to 1):";
+for (j = 5; j > 0; j = j - 1) {
+    print "Current j:", j;
+    sum_dec = sum_dec + j;
+}
+print "Sum after decrementing loop:", sum_dec; // Expected: 15 (5+4+3+2+1)
+
+// Nested for loop
+print "Starting nested for loop:";
+outer_limit = 2;
+inner_limit = 3;
+for (outer = 0; outer < outer_limit; outer = outer + 1) {
+    print "Outer loop:", outer;
+    for (inner = 0; inner < inner_limit; inner = inner + 1) {
+        print "  Inner loop:", inner;
+    }
+}
+// Expected output: Outer 0, Inner 0, 1, 2; Outer 1, Inner 0, 1, 2
+
+print "For loop tests complete.";

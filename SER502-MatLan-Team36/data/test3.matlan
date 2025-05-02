@@ -1,0 +1,39 @@
+// Test file for Boolean operators: AND, OR, NOT
+
+print "--- Boolean Tests ---";
+print true;  // Expected: true
+print false; // Expected: false
+
+// NOT operator
+print not true;  // Expected: false
+print not false; // Expected: true
+
+// AND operator
+print "true and true:", true and true;    // Expected: true
+print "true and false:", true and false;   // Expected: false
+print "false and true:", false and true;   // Expected: false
+print "false and false:", false and false; // Expected: false
+
+// OR operator
+print "true or true:", true or true;      // Expected: true
+print "true or false:", true or false;     // Expected: true
+print "false or true:", false or true;     // Expected: true
+print "false or false:", false or false;   // Expected: false
+
+// Combinations
+a = true;
+b = false;
+print "a and (not b):", a and (not b); // Expected: true
+print "(a or b) and (not a):", (a or b) and (not a); // Expected: false
+print "not (a and b):", not (a and b); // Expected: true
+
+cond1 = (1 < 5); // true
+cond2 = (10 == 10); // true
+cond3 = (3 > 5); // false
+
+print "cond1 and cond2:", cond1 and cond2; // Expected: true
+print "cond1 and cond3:", cond1 and cond3; // Expected: false
+print "cond1 or cond3:", cond1 or cond3; // Expected: true
+print "not cond3:", not cond3; // Expected: true
+
+print "--- Boolean Tests Complete ---";

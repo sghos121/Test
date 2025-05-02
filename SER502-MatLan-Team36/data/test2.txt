@@ -1,0 +1,61 @@
+// Test file for if/else statements in MatLan
+
+// Basic if statement
+x = 10;
+y = 5;
+result = 0;
+
+if (x > y) then {
+    print "Condition (x > y) is true.";
+    result = x;
+}
+print "Result after basic if:", result; // Expected: 10
+
+// Basic if/else statement
+a = 15;
+b = 20;
+min_val = 0;
+
+if (a < b) then {
+    print "Condition (a < b) is true.";
+    min_val = a;
+} else {
+    print "Condition (a < b) is false.";
+    min_val = b;
+}
+print "Minimum value (a, b):", min_val; // Expected: 15
+
+// Nested if/else statement
+grade = 75;
+message = "";
+
+if (grade >= 90) then {
+    message = "Grade is A";
+} else {
+    if (grade >= 80) then {
+        message = "Grade is B";
+    } else {
+        if (grade >= 70) then {
+            message = "Grade is C";
+        } else {
+            message = "Grade is below C";
+        }
+    }
+}
+print message; // Expected: Grade is C
+
+// If with boolean variables and logical operators
+condition1 = true;
+condition2 = false;
+test_result = 0;
+
+if (condition1 and not condition2) then {
+    print "Complex condition (true and not false) is true.";
+    test_result = 1;
+} else {
+    print "Complex condition (true and not false) is false.";
+    test_result = -1;
+}
+print "Test result:", test_result; // Expected: 1
+
+print "If/else tests complete.";
